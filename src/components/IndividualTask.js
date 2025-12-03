@@ -1,7 +1,7 @@
 import checkLG from "../images/icon-check.svg";
 import crossLG from "../images/icon-cross.svg";
 
-const IndividualTodo = ({todoInfo, onTodoStatusChange, onRemoveTodo}) => {
+const IndividualTask = ({todoInfo, onTodoStatusChange, onRemoveTodo}) => {
     return (
         <>
             <button className="btn-status"
@@ -26,4 +26,4 @@ const IndividualTodo = ({todoInfo, onTodoStatusChange, onRemoveTodo}) => {
     );
 }
 
-export default IndividualTodo;
+export default IndividualTask;
