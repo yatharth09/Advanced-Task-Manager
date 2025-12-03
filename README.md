@@ -4,8 +4,8 @@ A modern, responsive, and optimized Task Manager application built using **React
 ---
 
 ## 🚀 Live Demo  
-👉 **[View on Vercel](#)**  
-*(Add link after deployment)*
+👉 **[View on Vercel](https://advanced-task-manager-three.vercel.app/)**  
+
 
 ---
 
