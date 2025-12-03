@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import { DragDropContext, Draggable, Droppable } from "react-beautiful-dnd";
+import { DragDropContext, Draggable, Droppable } from "@hello-pangea/dnd";
 import DataContext from "../context/DataContext";
 import IndividualTodo from "./IndividualTask";
 
