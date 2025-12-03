@@ -1,44 +1,144 @@
+# 📝 Advanced Task Manager App  
+A modern, responsive, and optimized Task Manager application built using **React**, featuring drag-and-drop support, theming, custom hooks, and advanced performance techniques.
 
-# Todo Application
-A Todo Application developed in react, to help you manage
-your day-to-day daily task, organize your chores. The todo
-application is developed intending to aid you in your search
-for ultimate productivity.
+---
+
+## 🚀 Live Demo  
+👉 **[View on Vercel](#)**  
+*(Add link after deployment)*
+
+---
+
+## 📌 Project Overview  
+This project implements an **Advanced Task Manager** with complete CRUD operations, React optimization patterns, beautiful UI, and local storage persistence.
+
+It was built as part of an assignment that tests:  
+✔ React fundamentals  
+✔ State management with Context  
+✔ Custom hooks  
+✔ React optimization  
+✔ CSS theming  
+✔ Drag-and-drop implementation  
+
+---
+
+## ✨ Features
+
+### ✅ **Core Features**
+- ➕ Add new tasks  
+- ✔ Mark tasks as completed  
+- ❌ Delete tasks  
+- 🔎 Filter tasks: **All | Active | Completed**  
+- 💾 Persist tasks using **Local Storage**
+
+---
+
+### 🧠 **React-Specific Features**
+- 🪝 Custom Hook: `useLocalStorage`  
+- 🌐 Context API for global state management  
+- ⚡ Performance optimization using:
+  - `React.memo`
+  - `useCallback`
+  - `useMemo`
+- ⚠️ Input validation (prevents adding empty tasks)
+
+---
+
+### 🎨 **CSS & UI Features**
+- 🌗 **Dark Mode / Light Mode Toggle**
+- 🎞 Smooth animations for adding/removing tasks
+- 📱 Fully responsive layout (mobile-first)
+- 🟦 Modern Material-inspired UI styling
+- ↕ **Drag and Drop Sorting** (using `@hello-pangea/dnd`)  
+  *(A maintained fork of react-beautiful-dnd for React 18)*
+
+---
+
+## 🏗️ Tech Stack
+
+| Layer | Technologies |
+|------|--------------|
+| **Frontend** | React 18, JavaScript, JSX |
+| **State Management** | Context API |
+| **Styling** | CSS, Custom Theming |
+| **Storage** | LocalStorage |
+| **Drag & Drop** | @hello-pangea/dnd |
+| **Tools** | Vite / CRA (depending on setup) |
+
+---
+
+## 📁 Folder Structure
+
+```
+src/
+│
+├── components/
+│ ├── TaskList.js
+│ ├── TaskItem.js
+│ └── ThemeToggle.js
+│
+├── context/
+│ └── DataContext.js
+│
+├── hooks/
+│ └── useLocalStorageHook.js
+│
+├── styles/
+│ └── App.css
+│
+├── App.js
+└── index.js
+```
 
 
 
-### Author
 
-- [@prajwalgautam](https://www.github.com/prajwal18)
+---
+
+## ⚡ Performance Optimizations Applied
+
+### ✔ `useMemo`  
+Used to memoize:
+- Filtered task list  
+- Remaining tasks count  
+- Context value object  
+
+### ✔ `useCallback`  
+Wrapped handlers like:  
+- task creation  
+- task deletion  
+- toggle completion  
+- drag and drop reorder  
+
+### ✔ `React.memo`  
+Applied to components rendering list items to prevent unnecessary re-renders.
+
+---
+
+## 🧪 Validation Rules
+- You **cannot** add an empty task  
+- You **cannot** add whitespace-only tasks  
+- Shows a validation message for invalid input
+
+---
+
+## ↕ Drag & Drop
+Implemented using:
+
+```bash
+npm install @hello-pangea/dnd
+```
 
 
-## Features
+## Theme Support 
+A toggle button switches between:
 
-- Light/dark mode toggle
-- Live preview
-- Create, Remove, Re-arrange Todo list
-- Desktop and Mobile View
+-Dark Mode (default)
 
+-Light Mode
 
+Theme persists in local storage.
 
-## Demo
-#### Desktop View Dark mode
-![Desktop Dark](https://user-images.githubusercontent.com/28219362/173287743-48917e27-149a-4de9-bd63-a03e30587c07.jpg)
-#### Desktop View Light mode
-
-![Desktop Light](https://user-images.githubusercontent.com/28219362/173287749-01cb5923-9227-49f3-9852-a4e12264d0e7.jpg)
-
-#### Mobile View Dark mode
-![Mobile Dark](https://user-images.githubusercontent.com/28219362/173287751-0e0b1d33-da2f-45a8-a264-06ec8c6b558f.jpg)
-
-#### Mobile View Light mode
-![Mobile Light](https://user-images.githubusercontent.com/28219362/173287752-defbb6ec-fc77-4ba3-90fe-cdd76dfb931c.jpg)
-
-
-
-
-## Live Preview
-[@Click Me](https://prajwal18.github.io/Todo-Application/) To Visit the website.
 
 
 
